@@ -2,13 +2,15 @@
 using namespace std;
 
 int main(){
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
   string s;
   cin>>s;
   char elem = '2';
   int maxi = 0, count = 0;
-  for(int i = 0; i < s.size(); i++){
-    if(s[i] != elem){
-      elem = s[i];
+  for(auto i:s){
+    if(i != elem){
+      elem = i;
       count = 1;
       continue;
     }
