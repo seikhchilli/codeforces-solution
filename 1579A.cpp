@@ -2,22 +2,25 @@
 using namespace std;
 
 int main(){
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
   int t;
   cin>>t;
   string s;
   while(t--){
     cin>>s;
     int a = 0, b = 0, c = 0;
-    for(int i = 0; i < s.size(); i++){
-      if(s[i] == 'A'){
+    for(auto i : s){
+
+      if(i == 'A'){
         a++;
         continue;
       }
-      if(s[i] == 'B'){
+      if(i == 'B'){
         b++;
         continue;
       }
-      if(s[i] == 'C'){
+      if(i == 'C'){
         c++;
         continue;
       }
