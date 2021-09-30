@@ -37,5 +37,5 @@ int main(){
     cout<<cnt6<<endl;
     continue;
   }
-
+  return 0;
 }
