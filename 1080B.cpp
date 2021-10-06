@@ -2,9 +2,9 @@
 using namespace std;
 
 #define ll long long
-#define '\n' endl
+#define endl '\n'
 #define debug(n) cout<<(n)<<endl;
-const ll INF = 2e18 + 99
+const ll INF = 2e18 + 99;
 
 int main(){
   ios_base::sync_with_stdio(false);
