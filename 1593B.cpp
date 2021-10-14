@@ -7,47 +7,35 @@ using namespace std;
 #define debug(n) cout<<(n)<<endl;
 const ll INF = 2e18 + 99;
 
-int main(){
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int t;
-  cin>>t;
-  while(t--){
-    string s;
-    cin>>s;
-    int lftcount = 0;
-    int i;
-    for(i = s.length() - 1; i >= 0; i--){
-
-      if(s[i] == '5' || s[i] == '0'){
-        break;
-      }
-      lftcount++;
-    }
-    int rgtcount = 0;
-    if(s[i] == '5'){
-      for(int j = i-1; j >= 0; j--){
-        if(s[j] == '2' || s[j] == '7'){
-          break;
+int totcount(string s, string t) {
+    int count = 0;
+    int l = s.length();
+    while(s.length() > 0 && t.length() > 0) {
+        if(s.back() == t.back()) {
+            t.pop_back();
         }
-        if(s[j] == '0'){
-          i = j;
-          rgtcount++;
-          break;
+        else {
+            count++;
         }
-        rgtcount++;
-      }
+        s.pop_back();
     }
-    if(s[i] == '0'){
-      for(int j = i - 1; j >= 0; j--){
-        if(s[j] == '5' || s[j] == '0'){
-          break;
-        }
-        rgtcount++;
-      }
+    if(t.length() == 0){
+      return count;
     }
-    cout<<(rgtcount + lftcount)<<endl;
-  }
-
+    return l;
 }
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin>>t;
+    while(t--) {
+        string s;
+        cin>>s;
+        if(s.length() < 2) {
+            cout << s.length()<<endl;
+        } else {
+            cout<<min({totcount(s,"00"),totcount(s,"25"),totcount(s,"50"),totcount(s,"75")})<<endl;
+        }
+    }
+  }
