@@ -56,3 +56,5 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |151-A|[151-A](http://codeforces.com/problemset/problem/151/A)| [C++](./151A.cpp)|
 |1520-A|[1520-A](http://codeforces.com/problemset/problem/1520/A)| [C++](./1520A.cpp)|
 |1520-B|[1520-B](http://codeforces.com/problemset/problem/1520/B)| [C++](./1520B.cpp)|
+|1605-A|[1605-A](http://codeforces.com/problemset/problem/1605/A)| [C++](./1605.cpp)|
+
