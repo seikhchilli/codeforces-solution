@@ -108,6 +108,7 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |1606-A|[1606-A](http://codeforces.com/problemset/problem/1606/A)| [C++](./1606A.cpp)|
 |1607-A|[1607-A](http://codeforces.com/problemset/problem/1607/A)| [C++](./1607A.cpp)|
 |1607-C|[1607-C](http://codeforces.com/problemset/problem/1607/C)| [C++](./1607C.cpp)|
+|1610-A|[1610-A](http://codeforces.com/problemset/problem/1610/A)| [C++](./1610A.cpp)|
 |160-A|[160-A](http://codeforces.com/problemset/problem/160/A)| [C++](./160A.cpp)|
 |16-B|[16-B](http://codeforces.com/problemset/problem/16/B)| [C++](./16B.cpp)|
 |1-A|[1-A](http://codeforces.com/problemset/problem/1/A)| [C++](./1A.cpp)|
