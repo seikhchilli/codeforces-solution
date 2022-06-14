@@ -112,6 +112,8 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |1629-A|[1629-A](http://codeforces.com/problemset/problem/1629/A)| [C++](./1629A.cpp)|
 |1684-A|[1684-A](http://codeforces.com/problemset/problem/1684/A)| [C++](./1684A.cpp)|
 |1684-B|[1684-B](http://codeforces.com/problemset/problem/1684/B)| [C++](./1684B.cpp)|
+|1686-B|[1686-B](http://codeforces.com/problemset/problem/1686/B)| [C++](./1686B.cpp)|
+|1691-A|[1691-A](http://codeforces.com/problemset/problem/1691/A)| [C++](./1691A.cpp)|
 |160-A|[160-A](http://codeforces.com/problemset/problem/160/A)| [C++](./160A.cpp)|
 |16-B|[16-B](http://codeforces.com/problemset/problem/16/B)| [C++](./16B.cpp)|
 |1-A|[1-A](http://codeforces.com/problemset/problem/1/A)| [C++](./1A.cpp)|
