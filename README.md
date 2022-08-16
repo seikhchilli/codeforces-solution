@@ -109,6 +109,7 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |1607-A|[1607-A](http://codeforces.com/problemset/problem/1607/A)| [C++](./1607A.cpp)|
 |1607-C|[1607-C](http://codeforces.com/problemset/problem/1607/C)| [C++](./1607C.cpp)|
 |1610-A|[1610-A](http://codeforces.com/problemset/problem/1610/A)| [C++](./1610A.cpp)|
+|1619-A|[1619-A](http://codeforces.com/problemset/problem/1619/A)| [Python](./1619A.py)|
 |1629-A|[1629-A](http://codeforces.com/problemset/problem/1629/A)| [C++](./1629A.cpp)|
 |1684-A|[1684-A](http://codeforces.com/problemset/problem/1684/A)| [C++](./1684A.cpp)|
 |1684-B|[1684-B](http://codeforces.com/problemset/problem/1684/B)| [C++](./1684B.cpp)|
@@ -116,8 +117,11 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |1691-A|[1691-A](http://codeforces.com/problemset/problem/1691/A)| [C++](./1691A.cpp)|
 |1692-A|[1692-A](http://codeforces.com/problemset/problem/1692/A)| [C++](./1692A.cpp)|
 |1692-B|[1692-B](http://codeforces.com/problemset/problem/1692/B)| [C++](./1692B.cpp)|
+|1697-A|[1697-A](http://codeforces.com/problemset/problem/1697/A)| [C++](./1697A.cpp)|
 |160-A|[160-A](http://codeforces.com/problemset/problem/160/A)| [C++](./160A.cpp)|
 |16-B|[16-B](http://codeforces.com/problemset/problem/16/B)| [C++](./16B.cpp)|
+|1714-A|[1714-A](http://codeforces.com/problemset/problem/1714/A)| [C++](./1714A.cpp)|
+|1716-A|[1716-A](http://codeforces.com/problemset/problem/1716/A)| [C++](./1716A.cpp)|
 |1-A|[1-A](http://codeforces.com/problemset/problem/1/A)| [C++](./1A.cpp)|
 |200-B|[200-B](http://codeforces.com/problemset/problem/200/B)| [C++](./200B.cpp)|
 |208-A|[208-A](http://codeforces.com/problemset/problem/208/A)| [C++](./208A.cpp)|
@@ -143,6 +147,8 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |41-A|[41-A](http://codeforces.com/problemset/problem/41/A)| [C++](./41A.cpp)|
 |431-A|[431-A](http://codeforces.com/problemset/problem/431/A)| [C++](./431A.cpp)|
 |43-A|[43-A](http://codeforces.com/problemset/problem/43/A)| [C++](./43A.cpp)|
+|443-A|[443-A](http://codeforces.com/problemset/problem/443/A)| [Python](./443A.py)|
+|451-A|[451-A](http://codeforces.com/problemset/problem/431/A)| [C++](./451A.cpp)|
 |460-A|[460-A](http://codeforces.com/problemset/problem/460/A)| [C++](./460A.cpp)|
 |467-A|[467-A](http://codeforces.com/problemset/problem/467/A)| [C++](./467A.cpp)|
 |474-A|[474-A](http://codeforces.com/problemset/problem/474/A)| [C++](./474A.cpp)|
