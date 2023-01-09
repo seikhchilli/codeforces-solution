@@ -54,6 +54,7 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |141-A|[141-A](http://codeforces.com/problemset/problem/141/A)| [C++](./141A.cpp)|
 |1426-A|[1426-A](http://codeforces.com/problemset/problem/1426/A)| [C++](./1426A.cpp)|
 |1433-A|[1433-A](http://codeforces.com/problemset/problem/1433/A)| [C++](./1433A.cpp)|
+|144-A|[144-A](http://codeforces.com/problemset/problem/144/A)| [C++](./144A.cpp)|
 |1454-A|[1454-A](http://codeforces.com/problemset/problem/1454/A)| [C++](./1454A.cpp)|
 |1462-A|[1462-A](http://codeforces.com/problemset/problem/1462/A)| [C++](./1462A.cpp)|
 |1472-A|[1472-A](http://codeforces.com/problemset/problem/1472/A)| [C++](./1472A.cpp)|
@@ -125,6 +126,9 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |1703-B|[1703-B](http://codeforces.com/problemset/problem/1703/B)| [C++](./1703B.cpp)|
 |1714-A|[1714-A](http://codeforces.com/problemset/problem/1714/A)| [C++](./1714A.cpp)|
 |1716-A|[1716-A](http://codeforces.com/problemset/problem/1716/A)| [C++](./1716A.cpp)|
+|1721-A|[1721-A](http://codeforces.com/problemset/problem/1721/A)| [C++](./1721A.cpp)|
+|1739-A|[1739-A](http://codeforces.com/problemset/problem/1739/A)| [C++](./1739A.cpp)|
+|1749-A|[1749-A](http://codeforces.com/problemset/problem/1749/A)| [C++](./1749A.cpp)|
 |1-A|[1-A](http://codeforces.com/problemset/problem/1/A)| [C++](./1A.cpp)|
 |200-B|[200-B](http://codeforces.com/problemset/problem/200/B)| [C++](./200B.cpp)|
 |208-A|[208-A](http://codeforces.com/problemset/problem/208/A)| [C++](./208A.cpp)|
@@ -188,6 +192,7 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |785-A|[785-A](http://codeforces.com/problemset/problem/785/A)| [C++](./785A.cpp)|
 |791-A|[791-A](http://codeforces.com/problemset/problem/791/A)| [C++](./791A.cpp)|
 |80-A|[80-A](http://codeforces.com/problemset/problem/80/A)| [C++](./80A.cpp)|
+|873-B|[873-B](http://codeforces.com/problemset/problem/873/B)| [C++](./873B.cpp)|
 |935-A|[935-A](http://codeforces.com/problemset/problem/935/A)| [C++](./935A.cpp)|
 |939-A|[939-A](http://codeforces.com/problemset/problem/939/A)| [C++](./939A.cpp)|
 |954-A|[954-A](http://codeforces.com/problemset/problem/954/A)| [C++](./954A.cpp)|
