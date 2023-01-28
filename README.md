@@ -134,6 +134,8 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |1766-B|[1766-B](http://codeforces.com/problemset/problem/1766/B)| [C++](./1766B.cpp)|
 |1774-A|[1774-A](http://codeforces.com/problemset/problem/1774/A)| [Python](./1774A.py)|
 |1774-B|[1774-B](http://codeforces.com/problemset/problem/1774/B)| [C++](./1774B.cpp)|
+|1777-A|[1777-A](http://codeforces.com/problemset/problem/1777/A)| [C++](./1777A.cpp)|
+|1777-B|[1777-B](http://codeforces.com/problemset/problem/1777/B)| [C++](./1777B.cpp)|
 |1-A|[1-A](http://codeforces.com/problemset/problem/1/A)| [C++](./1A.cpp)|
 |200-B|[200-B](http://codeforces.com/problemset/problem/200/B)| [C++](./200B.cpp)|
 |208-A|[208-A](http://codeforces.com/problemset/problem/208/A)| [C++](./208A.cpp)|
