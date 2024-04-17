@@ -204,6 +204,7 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |791-A|[791-A](http://codeforces.com/problemset/problem/791/A)| [C++](./791A.cpp)|
 |80-A|[80-A](http://codeforces.com/problemset/problem/80/A)| [C++](./80A.cpp)|
 |81-A|[81-A](http://codeforces.com/problemset/problem/81/A)| [C++](./81A.cpp)|
+|855-B|[855-B](http://codeforces.com/problemset/problem/855/B)| [C++](./855B.cpp)|
 |873-B|[873-B](http://codeforces.com/problemset/problem/873/B)| [C++](./873B.cpp)|
 |903-C|[903-C](http://codeforces.com/problemset/problem/903/C)| [C++](./903C.cpp)|
 |935-A|[935-A](http://codeforces.com/problemset/problem/935/A)| [C++](./935A.cpp)|
