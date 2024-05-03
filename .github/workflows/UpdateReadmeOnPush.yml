@@ -11,41 +11,45 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.12'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'
 
-    - name: Check if files match naming pattern
-      id: check-files
-      run: |
-        if git diff --name-only HEAD~1 HEAD -- ./ | grep -E '^\d+[A-Z]\.(cpp|py)$' | grep -v '^\.github/'; then
-          echo "inside"
-          echo "::set-output name=changed::true"
-          echo "::set-output name=updated_files::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '^\d+[A-Z]\.(cpp|py)$')"
-        else
-          echo "::set-output name=changed::false"
-        fi
+      - name: Check if files match naming pattern
+        id: check-files
+        run: |
+          if git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+            files=$(git diff --name-only HEAD~1 HEAD -- ./ | grep -E '^\d+[A-Z]\.(cpp|py)$' | grep -v '^\.github/')
+            if [[ ! -z "$files" ]]; then
+              echo "::set-env name=CHANGED::true"
+              echo "::set-env name=UPDATED_FILES::$files"
+            else
+              echo "::set-env name=CHANGED::false"
+            fi
+          else
+            echo "::warning:: No previous commit found. Skipping checks."
+          fi
 
-    - name: Run Python script to update README
-      if: steps.check-files.outputs.changed == 'true'
-      run: python update_readme.py ${{ steps.check-files.outputs.updated_files }}
+      - name: Run Python script to update README
+        if: env.CHANGED == 'true'
+        run: python update_readme.py ${{ env.UPDATED_FILES }}
 
-    - name: Commit changes
-      if: steps.check-files.outputs.changed == 'true'
-      run: |
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git add README.md
-        git commit -m "Update README"
-      
-    - name: Push changes
-      if: steps.check-files.outputs.changed == 'true'
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.CODEFORCES_GITHUB_TOKEN }}
+      - name: Commit changes
+        if: env.CHANGED == 'true'
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add README.md
+          git commit -m "Update README"
+
+      - name: Push changes
+        if: env.CHANGED == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.CODEFORCES_GITHUB_TOKEN }}
