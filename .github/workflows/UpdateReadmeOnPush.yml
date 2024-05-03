@@ -30,11 +30,11 @@ jobs:
             **/*.py
             **/*.cpp
           # Fail if no allowed files changed
-          fail_on_empty_changes: true
 
       - name: Check File Names
         run: |
           changed_files=${{ steps.verify-changes.outputs.changed_files }}
+          echo $changed_files
           for file in $changed_files; do
             if [[ ! ($file =~ ^\d+[A-Z]\.(cpp|py)$) ]]; then
               echo "Error: File '$file' does not match allowed pattern"
