@@ -21,7 +21,7 @@ jobs:
     - name: Check if files match naming pattern
       id: check-files
       run: |
-        if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '^\d+[A-Z]\.(cpp|py)$' | grep -v '^\.github/'; then
+        if git diff --name-only HEAD^ HEAD -- ./ | grep -E '^\d+[A-Z]\.(cpp|py)$' | grep -v '^\.github/'; then
           echo "::set-output name=changed::true"
           echo "::set-output name=updated_files::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '^\d+[A-Z]\.(cpp|py)$')"
         else
@@ -44,4 +44,4 @@ jobs:
       if: steps.check-files.outputs.changed == 'true'
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.CODEFORCES_GITHUB_TOKEN }}
