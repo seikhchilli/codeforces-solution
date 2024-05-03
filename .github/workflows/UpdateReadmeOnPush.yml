@@ -36,7 +36,7 @@ jobs:
         run: |
           changed_files=${{ steps.verify-changes.outputs.changed_files }}
           for file in $changed_files; do
-            if [[ ! ($file =~ ^\d[A-Z]\.(cpp|py)$ ]]; then
+            if [[ ! ($file =~ ^\d[A-Z]\.(cpp|py)$) ]]; then
               echo "Error: File '$file' does not match allowed pattern"
               exit 1
             fi
