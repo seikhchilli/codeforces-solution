@@ -1,10 +1,8 @@
-name: Update README on Push or Pull Request
+name: Update README on Push
 
 on:
   push:
     branches:
-      - master
-      - t
 
 jobs:
   update-readme:
@@ -21,29 +19,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Check for Allowed File Changes
-        uses: tj-actions/verify-changed-files@v19
-        id: verify-changes
-        with:
-          # Only check for changes in Python and C++ files
-          files: |
-            **/*.py
-            **/*.cpp
-          # Fail if no allowed files changed
-          fail_on_empty_changes: true
-
-      - name: Check File Names
-        run: |
-          changed_files=${{ steps.verify-changes.outputs.changed_files }}
-          for file in $changed_files; do
-            if [[ ! ($file =~ ^\d+[A-Z]\.(cpp|py)$) ]]; then
-              echo "Error: File '$file' does not match allowed pattern"
-              exit 1
-            fi
-          done
-
       - name: Run Python script to update README
-        run: python update_readme.py ${{ steps.verify-changes.outputs.changed_files }}
+        run: |
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD)
+          echo "$CHANGED_FILES"
+          python update_readme.py $CHANGED_FILES
 
       - name: Commit changes
         run: |
