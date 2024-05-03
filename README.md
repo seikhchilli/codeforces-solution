@@ -143,6 +143,7 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |231-A|[231-A](http://codeforces.com/problemset/problem/231/A)| [C++](./231A.cpp)|
 |236-A|[236-A](http://codeforces.com/problemset/problem/236/A)| [C++](./236A.cpp)|
 |252-C|[252-C](http://codeforces.com/problemset/problem/252/C)| [C++](./252C.cpp)|
+|26-A|[26-A](http://codeforces.com/problemset/problem/26/A)|[C++](./26A.cpp)|
 |263-A|[263-A](http://codeforces.com/problemset/problem/263/A)| [C++](./263A.cpp)|
 |266-A|[266-A](http://codeforces.com/problemset/problem/266/A)| [C++](./266A.cpp)|
 |271-A|[271-A](http://codeforces.com/problemset/problem/271/A)| [C++](./271A.cpp)|
@@ -206,6 +207,7 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |81-A|[81-A](http://codeforces.com/problemset/problem/81/A)| [C++](./81A.cpp)|
 |855-B|[855-B](http://codeforces.com/problemset/problem/855/B)| [C++](./855B.cpp)|
 |873-B|[873-B](http://codeforces.com/problemset/problem/873/B)| [C++](./873B.cpp)|
+|9-A|[9-A](http://codeforces.com/problemset/problem/9/A)| [C++](./9A.cpp)|
 |9-A|[9-A](http://codeforces.com/problemset/problem/9/A)| [C++](./9A.cpp)|
 |903-C|[903-C](http://codeforces.com/problemset/problem/903/C)| [C++](./903C.cpp)|
 |935-A|[935-A](http://codeforces.com/problemset/problem/935/A)| [C++](./935A.cpp)|
