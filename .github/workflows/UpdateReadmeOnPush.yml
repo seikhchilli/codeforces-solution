@@ -21,20 +21,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Check for Allowed File Changes
-        uses: tj-actions/verify-changed-files@v19
-        id: verify-changes
-        with:
-          # Only check for changes in Python and C++ files
-          files: |
-            **/*.py
-            **/*.cpp
-          # Fail if no allowed files changed
-
       - name: Check File Names
         run: |
-          changed_files=${{ steps.verify-changes.outputs.changed_files }}
-          echo $changed_files
+          changed_files=$(git diff --name-only HEAD~1 HEAD)
+          echo ${{ changed_files }}
           for file in $changed_files; do
             if [[ ! ($file =~ ^\d+[A-Z]\.(cpp|py)$) ]]; then
               echo "Error: File '$file' does not match allowed pattern"
@@ -42,17 +32,17 @@ jobs:
             fi
           done
 
-      - name: Run Python script to update README
-        run: python update_readme.py ${{ steps.verify-changes.outputs.changed_files }}
+      # - name: Run Python script to update README
+      #   run: python update_readme.py ${{ steps.verify-changes.outputs.changed_files }}
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add README.md
-          git commit -m "Update README"
+      # - name: Commit changes
+      #   run: |
+      #     git config --local user.email "actions@github.com"
+      #     git config --local user.name "GitHub Actions"
+      #     git add README.md
+      #     git commit -m "Update README"
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.CODEFORCES_GITHUB_TOKEN }}
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.CODEFORCES_GITHUB_TOKEN }}
