@@ -3,6 +3,7 @@ name: Update README on Push or Pull Request
 on:
   push:
     branches:
+      - master
 
 jobs:
   update-readme:
