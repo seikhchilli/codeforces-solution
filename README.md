@@ -215,3 +215,4 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |977-A|[977-A](http://codeforces.com/problemset/problem/977/A)| [C++](./977A.cpp)|
 |991-B|[991-B](http://codeforces.com/problemset/problem/991/B)| [C++](./991B.cpp)|
 |9-A|[9-A](http://codeforces.com/problemset/problem/9/A)| [C++](./9A.cpp)|
+| ----------  | ------------ | -------- |
