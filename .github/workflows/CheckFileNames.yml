@@ -21,7 +21,7 @@ jobs:
           echo "$CHANGED_FILES"
 
           for file in $CHANGED_FILES; do
-            if [[ ! ($file =~ ^[0-9]+[A-Z]\.(cpp|py)$) ]]; then
+            if [[ ! ($file =~ ^[0-9]+[A-Z][0-9]*\.(cpp|py)$) ]]; then
               echo "Error: File '$file' does not match allowed pattern"
               exit 1
             fi
