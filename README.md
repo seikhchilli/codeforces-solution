@@ -137,6 +137,9 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |1774-B|[1774-B](http://codeforces.com/problemset/problem/1774/B)| [C++](./1774B.cpp)|
 |1777-A|[1777-A](http://codeforces.com/problemset/problem/1777/A)| [C++](./1777A.cpp)|
 |1777-B|[1777-B](http://codeforces.com/problemset/problem/1777/B)| [C++](./1777B.cpp)|
+|1968-A|[1968-A](http://codeforces.com/problemset/problem/1968/A)|[Python](./1968A.py)|
+|1968-B|[1968-B](http://codeforces.com/problemset/problem/1968/B)|[Python](./1968B.py)|
+|1968-C|[1968-C](http://codeforces.com/problemset/problem/1968/C)|[Python](./1968C.py)|
 |200-B|[200-B](http://codeforces.com/problemset/problem/200/B)| [C++](./200B.cpp)|
 |208-A|[208-A](http://codeforces.com/problemset/problem/208/A)| [C++](./208A.cpp)|
 |230-A|[230-A](http://codeforces.com/problemset/problem/230/A)| [C++](./230A.cpp)|
@@ -207,6 +210,7 @@ This repository contains the solutions to CodeForces competitions. The challenge
 |81-A|[81-A](http://codeforces.com/problemset/problem/81/A)| [C++](./81A.cpp)|
 |855-B|[855-B](http://codeforces.com/problemset/problem/855/B)| [C++](./855B.cpp)|
 |873-B|[873-B](http://codeforces.com/problemset/problem/873/B)| [C++](./873B.cpp)|
+|9-A|[9-A](http://codeforces.com/problemset/problem/9/A)| [C++](./9A.cpp)|
 |9-A|[9-A](http://codeforces.com/problemset/problem/9/A)| [C++](./9A.cpp)|
 |9-A|[9-A](http://codeforces.com/problemset/problem/9/A)| [C++](./9A.cpp)|
 |903-C|[903-C](http://codeforces.com/problemset/problem/903/C)| [C++](./903C.cpp)|
